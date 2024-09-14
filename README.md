@@ -1,11 +1,52 @@
-### System Specifications
+## Installations
 
-| Requirements | Versions |
-| :----------: | :------: |
-|   LARAVEL    |   10.x    |
-|     PHP      | ^8.1.10  |
-|    MYSQL     |   ^10.4.25   |
+1. Open Terminal (Ubuntu OS/MacOS).
 
+2. Install Node 18.x
+   
+   ```bash
+        $   sudo apt update
+        $   sudo apt install nodejs
+        $   sudo apt install npm
+    ```
+   
+3. Install PHP 8.2
+   
+    ```bash
+        $   sudo add-apt-repository ppa:ondrej/php
+        $   sudo apt update
+        $   sudo apt install php8.2
+    ```
+4. Install mysql
+   
+   ```bash
+        $   sudo apt install mysql-server    
+    ```
+5. Install composer
+   
+   ```bash
+        $   sudo apt install php-cli unzip
+        $   cd ~
+        $   curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+        $   HASH=`curl -sS https://composer.github.io/installer.sig`
+        $   sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+    ```
+6. Install git
+    
+   ```bash
+        $   sudo apt install git     
+    ```
+
+7. Install PHPUnit
+    
+   ```bash
+        $   sudo apt install php-cli \
+                 php-json \
+                 php-mbstring \
+                 php-xml \
+                 php-pcov \
+                 php-xdebug        
+    ```
 ## Configuration
 
 1.  Clone this repository.
@@ -73,3 +114,33 @@
         $   npm run dev
         $   npm run build
     ```
+
+After configuration, Install these on backend-dev-exam
+
+1.  Install lravel dusk.
+
+    ```bash
+        $   composer require --dev laravel/dusk
+        $   php artisan dusk:install
+    ```
+2.  Install Playwright.
+
+    ```bash
+        $   npm init playwright@latest
+    ```
+    
+How to run tests
+
+1. Laravel Dusk Testing
+
+   ```bash
+        $   php artisan dusk file/path
+    ```
+   
+2. Playwright Testing
+
+   ```bash
+        $   npx playwright test filename
+    ```
+
+Hello! these are the key steps I used in Automation Testing. the filepath for laravel dusk testing is in tests/Feature folder while the Playwright Testing is in e2e path. The code and documentation are work in progress but I hope this give you some impression as I am a fresh grad who wants to grow to a rapid and challenging environment.
