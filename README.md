@@ -115,7 +115,7 @@
         $   npm run build
     ```
 
-After configuration, Install these on backend-dev-exam
+## After configuration, Install these on backend-dev-exam
 
 1.  Install lravel dusk.
 
@@ -129,7 +129,7 @@ After configuration, Install these on backend-dev-exam
         $   npm init playwright@latest
     ```
     
-How to run tests
+## How to run tests
 
 1. Laravel Dusk Testing
 
